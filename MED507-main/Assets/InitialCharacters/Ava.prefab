@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6390711990153265074}
   - component: {fileID: 1201389452775285505}
   m_Layer: 0
-  m_Name: MainCharacter
+  m_Name: Ava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
