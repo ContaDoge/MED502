@@ -6682,8 +6682,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467443327}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.54, y: 2.56, z: -37.93}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13, y: 1.1, z: 3.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12712,6 +12712,8 @@ PlayableDirector:
     value: {fileID: 977728083}
   - key: {fileID: 2456112806366347720, guid: d85f4e5c4b948784d8b286890b29b80e, type: 2}
     value: {fileID: 1958517113}
+  - key: {fileID: 4406123219759845227, guid: d85f4e5c4b948784d8b286890b29b80e, type: 2}
+    value: {fileID: 467443330}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &905231267
@@ -26960,7 +26962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1782347054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27049,7 +27051,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
