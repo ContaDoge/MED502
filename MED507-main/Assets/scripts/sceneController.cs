@@ -1,49 +1,89 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class sceneController : MonoBehaviour
 {
+    public GameObject blackoutPanel;
+
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);   
+        DontDestroyOnLoad(this.gameObject);
     }
+
     void Update()
     {
-        // Press the space key to start coroutine
+        // Press the space key to start coroutine, for testing purposes
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // Use a coroutine to load the Scene in the background
-            StartCoroutine(LoadYourAsyncScene());
+            StartLoadNextScene();
         }
+    }
+
+    public void StartLoadNextScene()
+    {
+        StartCoroutine(LoadYourAsyncScene());
     }
 
     IEnumerator LoadYourAsyncScene()
     {
-        // The Application loads the Scene in the background as the current Scene runs.
-        // This is particularly good for creating loading screens.
-        // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
-        // a sceneBuildIndex of 1 as shown in Build Settings.
-
         int cScene = SceneManager.GetActiveScene().buildIndex;
-        Debug.Log(cScene);
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(cScene+1);
-
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(cScene + 1);
         asyncLoad.allowSceneActivation = false;
 
-        Debug.Log("scene now" + cScene);
-        // Wait until the asynchronous scene fully loads
+        // Wait for the scene to finish loading in background (progress reaches 0.9)
+        while (asyncLoad.progress < 0.9f)
+        {
+            yield return null;
+        }
+
+        // Fade to black and wait until fade is complete
+        yield return StartCoroutine(FadeBlackoutSquare(true));
+
+        // Activate the scene
+        asyncLoad.allowSceneActivation = true;
+
+        // Wait until the activation completes
         while (!asyncLoad.isDone)
         {
-            if (asyncLoad.progress >= 0.9f)
-            {
-                Debug.Log("scene is loaded");
-                if (Input.GetKeyDown (KeyCode.Space)) 
-                {
-                    asyncLoad.allowSceneActivation = true;
-                }
-            }
+            yield return null;
+        }
+
+        // Give the new scene one frame to initialize UI objects
+        yield return null;
+
+        // Fade back in (remove the black)
+        yield return StartCoroutine(FadeBlackoutSquare(false));
+    }
+
+    public IEnumerator FadeBlackoutSquare(bool fadeToBlack = true, int fadeSpeed = 5)
+    {
+        if (blackoutPanel == null)
+        {
+            Debug.LogError("blackoutPanel is not assigned. Assign it in the inspector.");
+            yield break;
+        }
+
+        Image img = blackoutPanel.GetComponent<Image>();
+        if (img == null)
+        {
+            Debug.LogError("blackoutPanel does not have an Image component.");
+            yield break;
+        }
+
+        Color color = img.color;
+        float targetAlpha = fadeToBlack ? 1f : 0f;
+
+        // Fast-path: if already at target alpha, exit immediately
+        if (Mathf.Approximately(color.a, targetAlpha)) yield break;
+
+        while (!Mathf.Approximately(color.a, targetAlpha))
+        {
+            float delta = fadeSpeed * Time.deltaTime;
+            color.a = fadeToBlack ? Mathf.Min(color.a + delta, 1f) : Mathf.Max(color.a - delta, 0f);
+            img.color = color;
             yield return null;
         }
     }
