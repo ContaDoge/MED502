@@ -2929,6 +2929,7 @@ GameObject:
   - component: {fileID: 1127766962}
   - component: {fileID: 1127766961}
   - component: {fileID: 1127766964}
+  - component: {fileID: 1127766965}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3032,6 +3033,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackoutPanel: {fileID: 111342344}
+--- !u!114 &1127766965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127766959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 5b7a705019321ba4980991efb57aa166, type: 2}
+    - {fileID: 11400000, guid: 4c03992f0dfd3394eb06c08ad569eada, type: 2}
+    - {fileID: 11400000, guid: 68815b661c1d3584f813550b80a3635d, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1127766964}
+          m_TargetAssemblyTypeName: sceneController, Assembly-CSharp
+          m_MethodName: fadeFromBlack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1127766964}
+          m_TargetAssemblyTypeName: sceneController, Assembly-CSharp
+          m_MethodName: fadeToBlack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1127766964}
+          m_TargetAssemblyTypeName: sceneController, Assembly-CSharp
+          m_MethodName: StartLoadNextScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1129551725
 GameObject:
   m_ObjectHideFlags: 0
@@ -5684,6 +5745,8 @@ PlayableDirector:
     value: {fileID: 1983066511}
   - key: {fileID: -986901920098541605, guid: e371297242e32f1439ddc2ceaeb1a00b, type: 2}
     value: {fileID: 1983066513}
+  - key: {fileID: 1923283179989582639, guid: e371297242e32f1439ddc2ceaeb1a00b, type: 2}
+    value: {fileID: 1127766965}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2023530492
@@ -8038,12 +8101,12 @@ MeshRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2023530492}
   - {fileID: 63671810}
   - {fileID: 425605456}
   - {fileID: 2043504710}
   - {fileID: 1483360932}
   - {fileID: 253091509}
   - {fileID: 1136462095918144743}
-  - {fileID: 2023530492}
   - {fileID: 1794299825}
   - {fileID: 530197587}
