@@ -6,20 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Filming Scene.unity
-    guid: a41748ee045e8cd4dbf1fce37a0f5417
-  - enabled: 0
-    path: Assets/Scenes/Creation space.unity
-    guid: 34f723b59ea69dd46a9720aeab4b0461
-  - enabled: 1
     path: Assets/Scenes/transitionScenesTest/test1.unity
     guid: e569014bf3fcacc45805b718146a36c2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/transitionScenesTest/test2.unity
     guid: a70943325080a9f4db5abebb32eefda8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/transitionScenesTest/test3.unity
     guid: d487c1e1fd2d2b14da78edf82c409026
+  - enabled: 1
+    path: Assets/Scenes/PalaceDay.unity
+    guid: 4d6f09ab9fd4e754f86f7681641fb308
+  - enabled: 1
+    path: Assets/Scenes/SceneWilderness.unity
+    guid: 06e60e1e38a93e449bc73c2df78a1b98
+  - enabled: 1
+    path: Assets/Scenes/SceneCavern.unity
+    guid: fc8d38ab40cb6c641adc9a76ffb7b06a
+  - enabled: 1
+    path: Assets/Scenes/PalaceNight.unity
+    guid: a52b56c960a326542b759846f5aa1ba9
+  - enabled: 1
+    path: Assets/Scenes/SceneCliff.unity
+    guid: d1688f24317386249890be25db8e561c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: dd0122b5851c618418c4ea93ff190738, type: 2}
