@@ -22,6 +22,14 @@ public class sceneController : MonoBehaviour
     {
         StartCoroutine(LoadYourAsyncScene());
     }
+    public void fadeToBlack()
+    {
+        StartCoroutine(FadeBlackoutSquare(true));
+    }
+    public void fadeFromBlack()
+    {
+        StartCoroutine(FadeBlackoutSquare(false));
+    }
 
     IEnumerator LoadYourAsyncScene()
     {
@@ -48,11 +56,11 @@ public class sceneController : MonoBehaviour
             yield return null;
         }
 
-        // Give the new scene one frame to initialize UI objects
-        yield return new WaitForSeconds(1.5f);
+        //// Give the new scene one frame to initialize UI objects
+        //yield return new WaitForSeconds(1.5f);
 
-        // Fade back in (remove the black)
-        yield return StartCoroutine(FadeBlackoutSquare(false));
+        //// Fade back in (remove the black)
+        //yield return StartCoroutine(FadeBlackoutSquare(false));
     }
 
     public IEnumerator FadeBlackoutSquare(bool fadeToBlack = true, int fadeSpeed = 3)
