@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneCliff.unity
     guid: d1688f24317386249890be25db8e561c
+  - enabled: 1
+    path: Assets/Scenes/theEnd.unity
+    guid: f614e4f517ccaee419a700ff823e414a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: dd0122b5851c618418c4ea93ff190738, type: 2}
