@@ -7,10 +7,7 @@ public class sceneController : MonoBehaviour
 {
     public GameObject blackoutPanel;
 
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    //void Awake(){DontDestroyOnLoad(this.gameObject);}
 
     void Update()
     {
@@ -52,13 +49,13 @@ public class sceneController : MonoBehaviour
         }
 
         // Give the new scene one frame to initialize UI objects
-        yield return null;
+        yield return new WaitForSeconds(1.5f);
 
         // Fade back in (remove the black)
         yield return StartCoroutine(FadeBlackoutSquare(false));
     }
 
-    public IEnumerator FadeBlackoutSquare(bool fadeToBlack = true, int fadeSpeed = 5)
+    public IEnumerator FadeBlackoutSquare(bool fadeToBlack = true, int fadeSpeed = 3)
     {
         if (blackoutPanel == null)
         {
