@@ -329,6 +329,7 @@ MonoBehaviour:
     m_Objects:
     - {fileID: 8674833460460336207}
     - {fileID: -3638724128470485761}
+    - {fileID: 8705828230392129076}
 --- !u!114 &-2882666675682277121
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -659,3 +660,19 @@ MonoBehaviour:
   m_Retroactive: 0
   m_EmitOnce: 1
   m_Asset: {fileID: 11400000, guid: 4c03992f0dfd3394eb06c08ad569eada, type: 2}
+--- !u!114 &8705828230392129076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 55
+  m_Retroactive: 0
+  m_EmitOnce: 1
+  m_Asset: {fileID: 11400000, guid: 68815b661c1d3584f813550b80a3635d, type: 2}
