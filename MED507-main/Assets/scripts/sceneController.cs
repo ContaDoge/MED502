@@ -45,7 +45,7 @@ public class sceneController : MonoBehaviour
         }
 
         // Fade to black and wait until fade is complete
-        yield return StartCoroutine(FadeBlackoutSquare(true));
+        //yield return StartCoroutine(FadeBlackoutSquare(true));
 
         // Activate the scene
         asyncLoad.allowSceneActivation = true;

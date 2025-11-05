@@ -7866,6 +7866,8 @@ PlayableDirector:
     value: {fileID: 648012650}
   - key: {fileID: 6109222106838255965, guid: 3acb70f410413a84a99f6dac9a87d68f, type: 2}
     value: {fileID: 648012651}
+  - key: {fileID: -8037977402930060110, guid: 3acb70f410413a84a99f6dac9a87d68f, type: 2}
+    value: {fileID: 1044884768}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &277689886
@@ -27221,6 +27223,7 @@ GameObject:
   - component: {fileID: 1044884763}
   - component: {fileID: 1044884762}
   - component: {fileID: 1044884767}
+  - component: {fileID: 1044884768}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -27324,6 +27327,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackoutPanel: {fileID: 1728368156}
+--- !u!114 &1044884768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044884761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 4c03992f0dfd3394eb06c08ad569eada, type: 2}
+    - {fileID: 11400000, guid: 5b7a705019321ba4980991efb57aa166, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1044884767}
+          m_TargetAssemblyTypeName: sceneController, Assembly-CSharp
+          m_MethodName: fadeToBlack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1044884767}
+          m_TargetAssemblyTypeName: sceneController, Assembly-CSharp
+          m_MethodName: fadeFromBlack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &1050333515
 PrefabInstance:
   m_ObjectHideFlags: 0
