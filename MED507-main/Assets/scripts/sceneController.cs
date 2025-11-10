@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class sceneController : MonoBehaviour
 {
-    public GameObject blackoutPanel;
+    public GameObject[] blackoutPanel;
+
+    private Image[] imgs;
 
     //void Awake(){DontDestroyOnLoad(this.gameObject);}
 
@@ -70,26 +72,27 @@ public class sceneController : MonoBehaviour
             Debug.LogError("blackoutPanel is not assigned. Assign it in the inspector.");
             yield break;
         }
-
-        Image img = blackoutPanel.GetComponent<Image>();
-        if (img == null)
+        for (int i = 0;i < blackoutPanel.Length; i++)
         {
-            Debug.LogError("blackoutPanel does not have an Image component.");
-            yield break;
-        }
+            Image img = blackoutPanel[i].GetComponent<Image>();
+            if (img == null)
+            {
+                Debug.LogError("blackoutPanel does not have an Image component.");
+                yield break;
+            }
+            Color color = img.color;
+            float targetAlpha = fadeToBlack ? 1f : 0f;
 
-        Color color = img.color;
-        float targetAlpha = fadeToBlack ? 1f : 0f;
+            // Fast-path: if already at target alpha, exit immediately
+            if (Mathf.Approximately(color.a, targetAlpha)) yield break;
 
-        // Fast-path: if already at target alpha, exit immediately
-        if (Mathf.Approximately(color.a, targetAlpha)) yield break;
-
-        while (!Mathf.Approximately(color.a, targetAlpha))
-        {
-            float delta = fadeSpeed * Time.deltaTime;
-            color.a = fadeToBlack ? Mathf.Min(color.a + delta, 1f) : Mathf.Max(color.a - delta, 0f);
-            img.color = color;
-            yield return null;
+            while (!Mathf.Approximately(color.a, targetAlpha))
+            {
+                float delta = fadeSpeed * Time.deltaTime;
+                color.a = fadeToBlack ? Mathf.Min(color.a + delta, 1f) : Mathf.Max(color.a - delta, 0f);
+                img.color = color;
+                yield return null;
+            }
         }
     }
 }
