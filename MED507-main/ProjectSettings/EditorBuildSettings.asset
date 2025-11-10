@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/transitionScenesTest/test3.unity
     guid: d487c1e1fd2d2b14da78edf82c409026
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 46154564081c5ba4aac72aa6b166dcee
+  - enabled: 1
     path: Assets/Scenes/PalaceDay.unity
     guid: 4d6f09ab9fd4e754f86f7681641fb308
   - enabled: 1
