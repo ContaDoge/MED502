@@ -9,14 +9,14 @@ public class sceneController : MonoBehaviour
 
     //void Awake(){DontDestroyOnLoad(this.gameObject);}
 
-    void Update()
-    {
-        // Press the space key to start coroutine, for testing purposes
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartLoadNextScene();
-        }
-    }
+    //void Update()
+    //{
+    //    // Press the space key to start coroutine, for testing purposes
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        StartLoadNextScene();
+    //    }
+    //}
 
     public void StartLoadNextScene()
     {
