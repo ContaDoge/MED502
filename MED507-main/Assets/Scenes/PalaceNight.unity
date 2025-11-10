@@ -46245,6 +46245,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376754150262975150, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437455447229180303, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5511603364159999507, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
       propertyPath: m_Name
       value: XR Origin (VR)
@@ -46281,6 +46325,10 @@ PrefabInstance:
       propertyPath: m_PositionInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
       value: <XRHMD>/centerEyePosition
       objectReference: {fileID: 0}
+    - target: {fileID: 6425059325364261905, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 920797283344446225}
     - target: {fileID: 6704837536692876789, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -46338,6 +46386,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 641574538}
   m_SourcePrefab: {fileID: 100100000, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+--- !u!20 &920797283344446225 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8556898951988623159, guid: 54e0d6cf860fa6641aa008c8d831e401, type: 3}
+  m_PrefabInstance: {fileID: 920797283344446224}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6299889139697745669
 PrefabInstance:
   m_ObjectHideFlags: 0
