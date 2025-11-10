@@ -12,6 +12,10 @@ public class sceneController : MonoBehaviour
     void Update()
     {
         // Press the space key to start coroutine, for testing purposes
+
+        //Slente her, this way of input use the old input system
+        ///if (Input.GetKeyDown(KeyCode.Space))
+        /// / therefore will change it to the new one. 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartLoadNextScene();
