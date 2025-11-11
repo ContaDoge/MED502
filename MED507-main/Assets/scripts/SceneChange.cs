@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class sceneController : MonoBehaviour
+public class SceneChange : MonoBehaviour
 {
     public GameObject[] blackoutPanel;
 
@@ -33,7 +33,7 @@ public class sceneController : MonoBehaviour
         StartCoroutine(FadeBlackoutSquare(false));
     }
 
-    IEnumerator LoadYourAsyncScene()
+    public IEnumerator LoadYourAsyncScene()
     {
         int cScene = SceneManager.GetActiveScene().buildIndex;
 

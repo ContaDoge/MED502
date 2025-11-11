@@ -991,6 +991,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "change scene",
+            "id": "cf920dde-58d3-4ee6-aedb-b1aa757afd2f",
+            "actions": [
+                {
+                    "name": "sceneChangeA",
+                    "type": "Button",
+                    "id": "3e29babc-59a7-4eaa-9b06-6ae214e4c130",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7e0c8132-5e47-4382-9480-3309b4ba5254",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "sceneChangeA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
