@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 167
+  m_Time: 127
   m_Retroactive: 0
   m_EmitOnce: 1
   m_Asset: {fileID: 11400000, guid: 68815b661c1d3584f813550b80a3635d, type: 2}
@@ -1493,7 +1493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 162
+  m_Time: 122
   m_Retroactive: 0
   m_EmitOnce: 1
   m_Asset: {fileID: 11400000, guid: 4c03992f0dfd3394eb06c08ad569eada, type: 2}
@@ -2528,19 +2528,19 @@ AnimationClip:
         time: 73.15
         value: 1
         inSlope: -0.00008969715
-        outSlope: 0.025807953
+        outSlope: 0.0199711
         tangentMode: 1
         weightedMode: 0
         inWeight: 0.22216342
-        outWeight: 0.10029679
+        outWeight: 0.18010582
       - serializedVersion: 3
-        time: 163.85
-        value: 1
-        inSlope: -0.03569396
-        outSlope: -0.03569396
+        time: 123.28333
+        value: 0.9788208
+        inSlope: -0.006036219
+        outSlope: -0.006036219
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.07703271
+        inWeight: 0.25984696
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -2564,7 +2564,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 163.85
+    m_StopTime: 123.28333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -2597,19 +2597,19 @@ AnimationClip:
         time: 73.15
         value: 1
         inSlope: -0.00008969715
-        outSlope: 0.025807953
+        outSlope: 0.0199711
         tangentMode: 1
         weightedMode: 0
         inWeight: 0.22216342
-        outWeight: 0.10029679
+        outWeight: 0.18010582
       - serializedVersion: 3
-        time: 163.85
-        value: 1
-        inSlope: -0.03569396
-        outSlope: -0.03569396
+        time: 123.28333
+        value: 0.9788208
+        inSlope: -0.006036219
+        outSlope: -0.006036219
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.07703271
+        inWeight: 0.25984696
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
