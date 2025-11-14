@@ -1126,7 +1126,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: fight scene
   - m_Version: 1
-    m_Start: 76.92694362414379
+    m_Start: 74.75417718423449
     m_ClipIn: 0
     m_Asset: {fileID: 2150797353709712699}
     m_Duration: 143.25551020408165
@@ -1399,7 +1399,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 0.08
+    volume: 0.1
 --- !u!114 &-311503182201606872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1573,7 +1573,7 @@ MonoBehaviour:
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 0.15
+    volume: 0.12
 --- !u!114 &3277611210876446042
 MonoBehaviour:
   m_ObjectHideFlags: 1
