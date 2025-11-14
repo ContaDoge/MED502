@@ -173,6 +173,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1027734960}
     m_Modifications:
+    - target: {fileID: 7927874545309086412, guid: 0986e1c751e5dd64da291dc093840007, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1027734963}
     - target: {fileID: 8487816417662483132, guid: 0986e1c751e5dd64da291dc093840007, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -259,7 +263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9148398972100511785, guid: 0986e1c751e5dd64da291dc093840007, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
