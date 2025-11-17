@@ -307,6 +307,33 @@ MonoBehaviour:
   m_Retroactive: 0
   m_EmitOnce: 1
   m_Asset: {fileID: 11400000, guid: 68815b661c1d3584f813550b80a3635d, type: 2}
+--- !u!114 &-6266677402258974302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b22792c3b570444eb18cb78c2af3a74, type: 3}
+  m_Name: Audio Track (5)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
+  m_TrackProperties:
+    volume: 1
+    stereoPan: 0
+    spatialBlend: 0
 --- !u!114 &-4554635887383367397
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1438,6 +1465,7 @@ MonoBehaviour:
   - {fileID: -2702755048684186098}
   - {fileID: -4554635887383367397}
   - {fileID: -8438641999191686024}
+  - {fileID: -6266677402258974302}
   - {fileID: -2037424102481184995}
   - {fileID: -986901920098541605}
   - {fileID: 1923283179989582639}
