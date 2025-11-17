@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: CreationSpace
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: ac55df4cd73f26448923dfc35a7357c7, type: 2}
+  m_Parent: {fileID: 2100000, guid: 161a0642b3d2964468c01ea52b47d295, type: 2}
   m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
   - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
