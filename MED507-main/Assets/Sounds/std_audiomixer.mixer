@@ -123,6 +123,20 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &-3933232160137063601
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 24b7c0f5f4d567247b8ab88935e2bb82
+  m_EffectName: Attenuation
+  m_MixLevel: 717a9aaca5b66b4489b32823937b6964
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-3779831519101211888
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -138,10 +152,27 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: -4586589736016390875}
+  - {fileID: -2967561144097023748}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-2967561144097023748
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: f46250a7278f58149a9b22c4271ba0cf
+  m_EffectName: Steam Audio Reverb
+  m_MixLevel: 80181ee80a0ce884a823f6b9e7b5b327
+  m_Parameters:
+  - m_ParameterName: Binaural
+    m_GUID: baf347b5cb2e2cf4e932f8f1ef0c6bc9
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-2896760059577882131
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -204,6 +235,25 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &-2228065279888809589
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ambience
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 3cd77a4df424d61418d9ccf896649de8
+  m_Children: []
+  m_Volume: 90e9812c163c3a64c9173409ff6516ef
+  m_Pitch: ad0208ea2df71794d87724ce81f44c37
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -3933232160137063601}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -231,6 +281,7 @@ AudioMixerController:
     - 2099f7b3f3e3aac47b696703c415e882
     - d180a6f4345c6fd48b6c6b874b7a9c33
     - a1acbee433bbaae409602ef955d4840c
+    - 3cd77a4df424d61418d9ccf896649de8
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -246,6 +297,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 8220364383105315168}
   - {fileID: 5256078580240360070}
+  - {fileID: -2228065279888809589}
   - {fileID: -2771049567487189916}
   m_Volume: f3eb35c4701d1574d9b936b81f620e15
   m_Pitch: 994bd70bd021c42408d3790f545d6c8b
@@ -283,7 +335,9 @@ AudioMixerSnapshotController:
     780789241d16f9946a5a6a0e7ef6e60b: -9.595368
     d2d45054b39399c469a71788db9eb5d2: 20
     f3eb35c4701d1574d9b936b81f620e15: 0
+    baf347b5cb2e2cf4e932f8f1ef0c6bc9: 1
     ee99264b83c28a84b821a7e2a1273d15: 10.032339
+    90e9812c163c3a64c9173409ff6516ef: -13.637256
     bce3955dc6bdd8141b4d63e74e49751a: 4.722419
     def1090e65833bb488bca6c8fc7cd132: 5
     684ef98ee7d353d4fa025201429f3a4f: 11.456138
