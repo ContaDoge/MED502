@@ -39076,9 +39076,21 @@ PrefabInstance:
       value: 482
       objectReference: {fileID: 0}
     - target: {fileID: 7774732286274696459, guid: 073e896bae354b04e8b0611623064069, type: 3}
+      propertyPath: Spatialize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774732286274696459, guid: 073e896bae354b04e8b0611623064069, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774732286274696459, guid: 073e896bae354b04e8b0611623064069, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 5256078580240360070, guid: 4c65c0cc3aa4321488949629609cbe3c, type: 2}
+    - target: {fileID: 7774732286274696459, guid: 073e896bae354b04e8b0611623064069, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7786906199625865703, guid: 073e896bae354b04e8b0611623064069, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -39100,9 +39112,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1249882104}
     - target: {fileID: 7870178121744067052, guid: 073e896bae354b04e8b0611623064069, type: 3}
+      propertyPath: Spatialize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870178121744067052, guid: 073e896bae354b04e8b0611623064069, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870178121744067052, guid: 073e896bae354b04e8b0611623064069, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 5256078580240360070, guid: 4c65c0cc3aa4321488949629609cbe3c, type: 2}
+    - target: {fileID: 7870178121744067052, guid: 073e896bae354b04e8b0611623064069, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7893397116139196705, guid: 073e896bae354b04e8b0611623064069, type: 3}
       propertyPath: m_Mesh
       value: 
