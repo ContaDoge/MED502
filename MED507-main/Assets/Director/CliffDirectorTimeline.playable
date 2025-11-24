@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Markers:
     m_Objects: []
   m_TrackProperties:
-    volume: 1
+    volume: 0.49854213
     stereoPan: 0
     spatialBlend: 0
 --- !u!114 &-3632128381182841249
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 1
+  m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 5039654044357583538}
   m_Parent: {fileID: 11400000}
@@ -1370,8 +1370,35 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 85.666664
-        value: 0.78717333
+        time: 16.183332
+        value: 0.51527965
+        inSlope: -0.004035391
+        outSlope: -0.004035391
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 24.55
+        value: 0.48751974
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 31.766666
+        value: 0.5844649
+        inSlope: 0.00021752194
+        outSlope: 0.00021752194
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 44.383335
+        value: 0.58554345
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1400,7 +1427,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 85.666664
+    m_StopTime: 44.383335
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -1430,8 +1457,35 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 85.666664
-        value: 0.78717333
+        time: 16.183332
+        value: 0.51527965
+        inSlope: -0.004035391
+        outSlope: -0.004035391
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 24.55
+        value: 0.48751974
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 31.766666
+        value: 0.5844649
+        inSlope: 0.00021752194
+        outSlope: 0.00021752194
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 44.383335
+        value: 0.58554345
         inSlope: 0
         outSlope: 0
         tangentMode: 136
